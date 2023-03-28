@@ -36,11 +36,13 @@ export default function Home() {
       <main className=' bg-gray-100 dark:bg-gray-900 font-Exo'>
         <section className='min-h-screen'>
 
-          <nav className='sticky px-8 py-6 mb-12 flex justify-between shadow-md md:px-12 mt-0'>
-           <a href=""> <Image src={logo} alt="Afnan Sohail Logo" width={200} height='auto' /></a>
+          <nav className='px-8 py-6 mb-12 flex justify-between shadow-md md:px-12 mt-0'>
+              <a href="">
+                <Image src={logo} alt="Afnan Sohail Logo" width={200} height='auto' className='dark:brightness-150'/>
+              </a>
             <ul className='flex items-center'>
-              <li> <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-lg md:text-2xl dark:text-teal-500 text-teal-700' /> </li>
-              <li><a className='border-2 border-teal-700 dark:border-teal-500 hover:bg-gradient-to-b hover:from-teal-600 hover:to-teal-700 dark:hover:from-teal-400 dark:hover:to-teal-500 duration-100 hover:text-white text-teal-700 drop-shadow-md px-4 py-2 rounded-md ml-8 text-sm md:text-lg'
+              <li> <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-lg md:text-2xl dark:text-teal-500 text-teal-700 ml-4 md:ml-0' /> </li>
+              <li><a className='border-2 border-teal-700 dark:border-teal-500 hover:bg-gradient-to-b hover:from-teal-600 hover:to-teal-700 dark:hover:from-teal-400 dark:hover:to-teal-500 duration-100 hover:text-white text-teal-700 drop-shadow-md px-4 py-2 rounded-md ml-4 md:ml-8 text-sm md:text-lg'
               href="https://pdfhost.io/v/KlZpzf4LD_Resume" target={'_blank'}>Resume</a></li>
             </ul>
           </nav>
@@ -89,10 +91,12 @@ export default function Home() {
           <div className='max-w-screen-lg p-6 mx-auto w-full h-full'>
 
             <div className='grid grid-cols-2 md:grid-cols-3 gap-8 justify-center items-center'>
-              <a href="https://www.behance.net/gallery/115721679/Multan-Sultans-Social-Media-Posts" target={'_blank'}>
-                <Image src={ms} alt="Multan Sultans"
-                className='rounded-3xl duration-100 hover:scale-105 hover:drop-shadow-2xl'/>
-              </a>
+
+                <a href="https://www.behance.net/gallery/115721679/Multan-Sultans-Social-Media-Posts" target={'_blank'}>
+                  <Image src={ms} alt="Multan Sultans"
+                  className='rounded-3xl duration-100 hover:scale-105 hover:drop-shadow-2x'/>
+                </a>
+
               <a href="https://www.behance.net/gallery/166860755/Hexlsior-Clothing" target={'_blank'}>
                 <Image src={hxl} alt="Hexlsior"
                 className='rounded-3xl duration-100 hover:scale-105 hover:drop-shadow-2xl'/>
@@ -118,7 +122,6 @@ export default function Home() {
           </div>
 
         </section>
-
 
         <footer className='bg-slate-200 dark:bg-gray-800'>
           <p className='text-teal-700 dark:text-teal-500 font-semibold py-1 text-center shadow-inner'>Copyright © 2023 Afnan Sohail. All Rights Reserved.</p>
